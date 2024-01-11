@@ -25,7 +25,7 @@
     "url": "https://github.com/swlee052/smartvocab-shared.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "@swlee052:registry": "https://npm.pkg.github.com"
   },
   "exports": {
     ".": {
