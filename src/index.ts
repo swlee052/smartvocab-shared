@@ -13,7 +13,7 @@ export {
   IReduxLogout,
   IAuthResponse,
   IAuthUser,
-} from './interfaces/auth.interface';
+} from './auth.interface';
 
 export { uploads, videoUpload } from './cloudinary-upload';
 

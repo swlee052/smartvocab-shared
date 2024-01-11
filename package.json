@@ -1,5 +1,5 @@
 {
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "types": "./src/index.d.ts",
   "main": "index.js",
@@ -28,14 +28,18 @@
   "publishConfig": {
     "@swlee052:registry": "https://npm.pkg.github.com"
   },
+  "files": [
+    "build",
+    "src"
+  ],
   "exports": {
     ".": {
-      "import": "./esm/index.js",
-      "require": "./cjs/index.js"
+      "import": "./src/index.js",
+      "require": "./src/index.js"
     },
     "./icons": {
-      "import": "./esm/icons/index.js",
-      "require": "./cjs/icons/index.js"
+      "import": "./src/icons/index.js",
+      "require": "./src/icons/index.js"
     }
   },
   "dependencies": {
