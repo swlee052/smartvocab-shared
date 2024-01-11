@@ -1,6 +1,7 @@
 {
   "version": "0.0.1",
   "license": "MIT",
+  "types": "./src/index.d.ts",
   "main": "index.js",
   "description": "Helpers library for Smartvocab app",
   "engines": {
@@ -21,10 +22,10 @@
   "author": "Sungwoo Lee",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/swlee052/smartvocab-shared.git"
+    "url": "https://github.com/swlee052/smartvocab-shared.git"
   },
   "publishConfig": {
-    "@swlee052:registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com"
   },
   "exports": {
     ".": {
@@ -36,7 +37,6 @@
       "require": "./cjs/icons/index.js"
     }
   },
-  "types": "./src/index.d.ts",
   "dependencies": {
     "@elastic/elasticsearch": "^8.11.0",
     "cloudinary": "^1.41.2",
