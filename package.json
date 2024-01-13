@@ -1,5 +1,5 @@
 {
-  "version": "0.0.5",
+  "version": "0.0.6",
   "license": "MIT",
   "types": "./src/index.d.ts",
   "main": "./cjs/index.js",
@@ -28,7 +28,9 @@
   },
   "files": [
     "build",
-    "src"
+    "src",
+    "esm",
+    "cjs"
   ],
   "exports": {
     ".": {
