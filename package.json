@@ -2,6 +2,8 @@
   "version": "0.0.4",
   "license": "MIT",
   "types": "./src/index.d.ts",
+  "main": "./cjs/index.js",
+  "module": "./esm/index.js",
   "description": "Helpers library for Smartvocab app",
   "scripts": {
     "build": "npm run build:cjs && npm run build:esm && tsc --outDir build/src && node scripts/build-package.js",
@@ -19,7 +21,7 @@
   "name": "@swlee052/smartvocab-shared",
   "repository": {
     "type": "git",
-    "url": "https://github.com/swlee052/smartvocab-shared.git"
+    "url": "git+https://github.com/swlee052/smartvocab-shared.git"
   },
   "publishConfig": {
     "@swlee052:registry": "https://npm.pkg.github.com"
@@ -30,12 +32,8 @@
   ],
   "exports": {
     ".": {
-      "import": "./src/index.js",
-      "require": "./src/index.js"
-    },
-    "./icons": {
-      "import": "./src/icons/index.js",
-      "require": "./src/icons/index.js"
+      "default": "./esm/index.js",
+      "require": "./cjs/index.js"
     }
   },
   "dependencies": {
